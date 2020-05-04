@@ -1,0 +1,70 @@
+
+body{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.area{
+    background: url('./assets/Img_1.png') ;
+    width: 70vw;
+    height: 80vh;
+    margin: 5rem auto;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+
+}
+.road{
+    background: url('./assets/Img_02.png') no-repeat;
+    position: absolute;
+    bottom: 0 ;
+    height: 140px;
+    width: 500%;
+    left: 0;
+    background-repeat: repeat-x;
+    display: block;
+    animation: movingCar 6s linear infinite ;
+
+}
+.car{
+    position: absolute;
+    bottom:5.2%;
+    left: 24%;
+    animation: suspension 1s linear infinite;
+}
+.stopCar{
+    position: absolute;
+    bottom:5.2%;
+    left: 24%;
+}
+.stopPath{
+    background: url('./assets/Img_02.png') no-repeat;
+    position: absolute;
+    bottom: 0 ;
+    height: 140px;
+    width: 500%;
+    left: 0;
+    background-repeat: repeat-x;
+    display: block;
+}
+/* Animation */
+@keyframes movingCar{
+    100%{
+        transform: translateX(-2950px);
+    }
+}
+@keyframes suspension{
+    100%{
+        transform: translateY(-2px);
+    }
+    50%{
+        transform: translateY(-3px);
+    }
+    0%{
+        transform: translateY(-1px);
+
+    }
+}
